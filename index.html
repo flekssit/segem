@@ -34,7 +34,7 @@
 <script>
 pannellum.viewer('panorama', {   
     "default": {
-        "firstScene": "salon",
+        "firstScene": "giris0",
         "author": "FLEKSSİT",
         "sceneFadeDuration": 1000,
         "autoLoad": true,
@@ -43,40 +43,48 @@ pannellum.viewer('panorama', {
     },
 
     "scenes": {
-        "salon": {
-            "title": "Salon",
-            "panorama": "salon.jpg",
+        "giris0": {
+            "title": "Giriş",
+            "panorama": "giris0.jpg",
             "hotSpots": [
                 {
                     "pitch": -6,
                     "yaw": 166,
                     "type": "scene",
-                    "text": "Mutfağa Geç",
-                    "sceneId": "mutfak",
-                    "createTooltipArgs": "Mutfağa Geç",
+                    "text": "Bekleme Alanı",
+                    "sceneId": "giris1",
+                    "createTooltipArgs": "Bekleme Alanı",
                     "cssClass": "custom-hotspot" // Özel stilimizi burada çağırdık
                 }
             ]
         },
 
-        "mutfak": {
-            "title": "Mutfak",
-            "panorama": "mutfak.jpg",
+        "giris1": {
+            "title": "Bekleme Alanı",
+            "panorama": "giris1.jpg",
             "hotSpots": [
                 {
                     "pitch": -10,
                     "yaw": -110,
                     "type": "scene",
-                    "text": "Salona Dön",
-                    "sceneId": "salon",
+                    "text": "Girişe Dön",
+                    "sceneId": "giris0",
+                    "cssClass": "custom-hotspot"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -110,
+                    "type": "scene",
+                    "text": "Oda 4",
+                    "sceneId": "oda4",
                     "cssClass": "custom-hotspot"
                 },
                 {
                     "pitch": -12,
                     "yaw": 127,
                     "type": "scene",
-                    "text": "Yatak Odasına Git",
-                    "sceneId": "yatak_odasi",
+                    "text": "Bekleme Alanı",
+                    "sceneId": "giris2",
                     "cssClass": "custom-hotspot"
                 }
             ]
@@ -102,6 +110,7 @@ pannellum.viewer('panorama', {
 
 </body>
 </html>
+
 
 
 
