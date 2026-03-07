@@ -44,14 +44,14 @@ pannellum.viewer('panorama', {
 
     "scenes": {
         "giris0": {
-            "title": "Giriş",
+            "title": "GİRİŞ",
             "panorama": "giris0.jpg",
             "hotSpots": [
                 {
                     "pitch": -6,
                     "yaw": 166,
                     "type": "scene",
-                    "text": "Bekleme Alanı",
+                    "text": "Bekleme Alanı 1",
                     "sceneId": "giris1",
                     "createTooltipArgs": "Bekleme Alanı",
                     "cssClass": "custom-hotspot" // Özel stilimizi burada çağırdık
@@ -60,7 +60,7 @@ pannellum.viewer('panorama', {
         },
 
         "giris1": {
-            "title": "Bekleme Alanı",
+            "title": "BEKLEME ALANI 1",
             "panorama": "giris1.jpg",
             "hotSpots": [
                 {
@@ -73,7 +73,7 @@ pannellum.viewer('panorama', {
                 },
                 {
                     "pitch": -10,
-                    "yaw": -110,
+                    "yaw": -60,
                     "type": "scene",
                     "text": "Oda 4",
                     "sceneId": "oda4",
@@ -83,16 +83,16 @@ pannellum.viewer('panorama', {
                     "pitch": -12,
                     "yaw": 127,
                     "type": "scene",
-                    "text": "Bekleme Alanı",
+                    "text": "Bekleme Alanı 3",
                     "sceneId": "giris2",
                     "cssClass": "custom-hotspot"
                 }
             ]
         },
 
-        "yatak_odasi": {
-            "title": "Yatak Odası",
-            "panorama": "yatak_odasi.jpg",
+        "giris2": {
+            "title": "BEKLEME ALANI 2",
+            "panorama": "giris2.jpg",
             "hotSpots": [
                 {
                     "pitch": -1,
@@ -103,6 +103,20 @@ pannellum.viewer('panorama', {
                     "cssClass": "custom-hotspot"
                 }
             ]
+        },
+        "oda4": {
+            "title": " ODA 4",
+            "panorama": "oda4.jpg",
+            "hotSpots": [
+                {
+                    "pitch": -1,
+                    "yaw": 40,
+                    "type": "scene",
+                    "text": "Bekleme Alanına Dön",
+                    "sceneId": "giris1",
+                    "cssClass": "custom-hotspot"
+                }
+            ]
         }
     }
 });
@@ -110,6 +124,7 @@ pannellum.viewer('panorama', {
 
 </body>
 </html>
+
 
 
 
